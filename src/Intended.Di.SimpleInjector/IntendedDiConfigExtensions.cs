@@ -7,7 +7,7 @@ namespace Intended.Di.SimpleInjector
         public static IDiContainerConfigurator UseSimpleInjectorDi(this IDiContainerConfigurator configurator)
         {
             return configurator
-                .UseDiContainer<SimpleInjectorDiProvider, SimpleInjectorDiProvider>();
+                .UseDiContainer<SimpleInjectorContainerAccessor>();
         }
     }
 }

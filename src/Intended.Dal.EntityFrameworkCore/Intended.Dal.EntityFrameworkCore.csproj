@@ -3,7 +3,7 @@
     <PropertyGroup>
         <TargetFrameworks>net462;net472;netstandard2.0</TargetFrameworks>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <PackageVersion>0.2.0</PackageVersion>
+        <PackageVersion>0.3.1</PackageVersion>
         <Title>Intended framework EFCore bridge</Title>
         <Description>Intended framework EFCore bridge</Description>
         <Copyright>(c) 2019 Nikita Ivanov</Copyright>

@@ -1,4 +1,3 @@
-using System;
 using System.Reflection;
 using Intended.DAL;
 using Intended.DependencyInjection;
@@ -32,12 +31,10 @@ namespace Intended.Di
             return configurator;
         }
         
-        public static IDiContainerConfigurator UseDiContainer<TContainerAccessor, TContainerConfigurator>(this IDiContainerConfigurator configurator) 
+        public static IDiContainerConfigurator UseDiContainer<TContainerAccessor>(this IDiContainerConfigurator configurator) 
             where TContainerAccessor : class, IDiContainerAccessor 
-            where TContainerConfigurator : class, IDiContainerConfigurator
         {
             configurator.Register<IDiContainerAccessor, TContainerAccessor>(ContainerEntityLifestyle.Scoped);
-            configurator.Register<IDiContainerConfigurator, TContainerConfigurator>(ContainerEntityLifestyle.Scoped);
 
             return configurator;
         }
