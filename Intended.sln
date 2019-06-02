@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intended", "src\Intended\Intended.csproj", "{C8361DD2-CD09-4E36-9A05-0D2809C18314}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intended.Di.SimpleInjector", "src\Intended.Di.SimpleInjector\Intended.Di.SimpleInjector.csproj", "{F95281FE-007B-49DD-ACAA-F854F5E08E3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intended.Dal.EntityFrameworkCore", "src\Intended.Dal.EntityFrameworkCore\Intended.Dal.EntityFrameworkCore.csproj", "{4DE9633D-B876-460A-86F4-1AE3577EA27D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,13 @@ Global
 		{C8361DD2-CD09-4E36-9A05-0D2809C18314}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8361DD2-CD09-4E36-9A05-0D2809C18314}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8361DD2-CD09-4E36-9A05-0D2809C18314}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F95281FE-007B-49DD-ACAA-F854F5E08E3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F95281FE-007B-49DD-ACAA-F854F5E08E3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F95281FE-007B-49DD-ACAA-F854F5E08E3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F95281FE-007B-49DD-ACAA-F854F5E08E3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DE9633D-B876-460A-86F4-1AE3577EA27D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DE9633D-B876-460A-86F4-1AE3577EA27D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DE9633D-B876-460A-86F4-1AE3577EA27D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DE9633D-B876-460A-86F4-1AE3577EA27D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -1,5 +1,4 @@
-﻿using Intended.Abstractions.OperationsHandling;
-using Intended.DependencyInjection;
+﻿using Intended.DependencyInjection;
 
 namespace Intended.OperationsHandling
 {

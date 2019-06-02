@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using Intended.Abstractions.OperationsHandling;
 
 namespace Intended.OperationsHandling
 {

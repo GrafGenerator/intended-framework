@@ -4,7 +4,7 @@
         <TargetFrameworks>net462;net472;netstandard2.0</TargetFrameworks>
         <LangVersion>7.3</LangVersion>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <PackageVersion>0.1.0</PackageVersion>
+        <PackageVersion>0.2.0</PackageVersion>
         <Title>Intended web applications micro-framework</Title>
         <Authors>Nikita Ivanov (grafgenerator@gmail.com)</Authors>
         <Description>Provides several functionalities to kickstart the development of web applications</Description>

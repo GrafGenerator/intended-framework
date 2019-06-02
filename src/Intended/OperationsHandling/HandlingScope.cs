@@ -1,8 +1,7 @@
 ﻿using System.Threading.Tasks;
-using Intended.Abstractions.Dal;
-using Intended.Abstractions.Domain;
-using Intended.Abstractions.OperationsHandling;
+using Intended.DAL;
 using Intended.DependencyInjection;
+using Intended.Domain;
 
 namespace Intended.OperationsHandling
 {

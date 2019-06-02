@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>net462;net472;netstandard2.0</TargetFrameworks>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageVersion>0.2.0</PackageVersion>
+        <Title>Intended framework SimpleInjector DI bridge</Title>
+        <Description>Intended framework SimpleInjector DI bridge</Description>
+        <Copyright>(c) 2019 Nikita Ivanov</Copyright>
+        <RepositoryUrl>https://github.com/GrafGenerator/intended-framework</RepositoryUrl>
+        <PackageTags>intended,di,simpleinjector,simple,injector,dependency,injection</PackageTags>
+        <RepositoryType>git</RepositoryType>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Intended\Intended.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="SimpleInjector" Version="4.6.0" />
+    </ItemGroup>
+
+</Project>

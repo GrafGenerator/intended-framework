@@ -1,6 +1,5 @@
 ﻿using System;
-using Intended.Abstractions.Domain;
-using Intended.Abstractions.OperationsHandling;
+using Intended.Domain;
 
 namespace Intended.OperationsHandling
 {

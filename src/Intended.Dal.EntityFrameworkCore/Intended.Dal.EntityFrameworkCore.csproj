@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>net462;net472;netstandard2.0</TargetFrameworks>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageVersion>0.2.0</PackageVersion>
+        <Title>Intended framework EFCore bridge</Title>
+        <Description>Intended framework EFCore bridge</Description>
+        <Copyright>(c) 2019 Nikita Ivanov</Copyright>
+        <RepositoryUrl>https://github.com/GrafGenerator/intended-framework</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageTags>intended,dal,efcore,entiryframeworkcore,netcore</PackageTags>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Intended\Intended.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.3" />
+    </ItemGroup>
+
+</Project>

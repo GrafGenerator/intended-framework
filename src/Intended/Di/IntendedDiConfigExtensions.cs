@@ -1,9 +1,6 @@
 using System;
 using System.Reflection;
-using Intended.Abstractions.Dal;
-using Intended.Abstractions.OperationsHandling;
-using Intended.DAL.DalGenericImpl.Readers;
-using Intended.DAL.DalGenericImpl.Repositories;
+using Intended.DAL;
 using Intended.DependencyInjection;
 using Intended.OperationsHandling;
 
@@ -27,10 +24,20 @@ namespace Intended.Di
             return configurator;
         }
         
-        public static IDiContainerConfigurator UseDalAccessors(this IDiContainerConfigurator configurator, Type dbContextAccessorType, Type dbSetAccessorType)
+        public static IDiContainerConfigurator UseDalAccessors<TContextAccessor>(this IDiContainerConfigurator configurator) 
+            where TContextAccessor : class, IDbContextAccessor
         {
-            configurator.Register(typeof(IDbContextAccessor), dbContextAccessorType, ContainerEntityLifestyle.Scoped);
-            configurator.Register(typeof(IDbSetAccessor<>), dbSetAccessorType, ContainerEntityLifestyle.Scoped);
+            configurator.Register<IDbContextAccessor, TContextAccessor>(ContainerEntityLifestyle.Scoped);
+
+            return configurator;
+        }
+        
+        public static IDiContainerConfigurator UseDiContainer<TContainerAccessor, TContainerConfigurator>(this IDiContainerConfigurator configurator) 
+            where TContainerAccessor : class, IDiContainerAccessor 
+            where TContainerConfigurator : class, IDiContainerConfigurator
+        {
+            configurator.Register<IDiContainerAccessor, TContainerAccessor>(ContainerEntityLifestyle.Scoped);
+            configurator.Register<IDiContainerConfigurator, TContainerConfigurator>(ContainerEntityLifestyle.Scoped);
 
             return configurator;
         }
