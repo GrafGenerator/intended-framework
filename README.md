@@ -1,1 +1,1 @@
-# intended-framework
+# intent-framework
